@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">TapIt</string>
+
+    <string name="result_text_default">Please focus camera on QR Code</string>
+    <string name="Rs">\u20B9</string>
+
+    <string name="hint"><font size="14">Enter UPI Id / Mob Number / Contact</font></string>
+    <string name="hint1"><font size="25">00.00</font></string>
+
+    <string-array name="country_arrays">
+        <item>Malaysia</item>
+        <item>United States</item>
+        <item>Indonesia</item>
+        <item>France</item>
+        <item>Italy</item>
+        <item>Singapore</item>
+        <item>New Zealand</item>
+        <item>India</item>
+    </string-array>
+</resources>

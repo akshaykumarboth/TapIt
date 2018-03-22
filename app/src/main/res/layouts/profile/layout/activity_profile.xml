@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    tools:context="com.akshayboth.tapit.ProfileActivity">
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_navigation">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="15dp">
+                <View
+                    android:id="@+id/er"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp" />
+
+
+                <android.support.v7.widget.CardView
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    card_view:layout_constraintTop_toBottomOf="@+id/er"
+                    card_view:layout_constraintLeft_toLeftOf="parent"
+                    card_view:layout_constraintRight_toRightOf="parent"
+                    card_view:cardBackgroundColor="@color/white90"
+                    card_view:cardCornerRadius="15dp"
+                    card_view:cardUseCompatPadding="true"
+                    card_view:contentPadding="15dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:paddingLeft="20dp"
+                        android:paddingStart="20dp"
+                        android:paddingRight="20dp"
+                        android:paddingEnd="20dp"
+                        android:orientation="vertical">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:visibility="invisible"/>
+
+                        <TextView
+                            android:id="@+id/tv_profile_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:text="Akshay Kumar Both"
+                            android:textColor="@color/theme_blue_text"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:translationZ="5dp"/>
+
+                        <TextView
+                            android:id="@+id/tv_email"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:alpha="0.7"
+                            android:text="akshaykumarboth@gmail.com"
+                            android:textColor="@color/theme_blue_text"
+                            android:textSize="15dp"
+                            android:translationZ="5dp" />
+
+                        <Button
+                            android:id="@+id/btn_show_qr"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:paddingEnd="15dp"
+                            android:paddingRight="15dp"
+                            android:paddingLeft="5dp"
+                            android:paddingStart="5dp"
+                            android:background="@drawable/light_curved_shape"
+                            android:drawableLeft="@mipmap/ic_arrow_drop_down_white_36dp"
+                            android:drawableStart="@mipmap/ic_arrow_drop_down_white_36dp"
+                            android:drawablePadding="5dp"
+                            android:drawableTint="@color/white"
+                            android:text="Show QR Code"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                        <LinearLayout
+                            android:id="@+id/ll_qr_con"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:visibility="gone"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="3dp"
+                                android:alpha="0.7"
+                                android:text="Sacn this for recieving transaction."
+                                android:textColor="@color/theme_blue_text"
+                                android:textSize="12dp"
+                                android:translationZ="5dp" />
+                            <ImageButton
+                                android:id="@+id/qr_code"
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                android:background="@drawable/qr"
+                                android:translationZ="5dp"/>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <com.github.siyamed.shapeimageview.CircularImageView
+                    android:id="@+id/imgItem1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/both"
+                    android:translationZ="5dp"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintTop_toTopOf="@+id/card_1"
+                    app:layout_constraintLeft_toLeftOf="@+id/card_1"
+                    app:layout_constraintRight_toRightOf="@+id/card_1"
+                    app:layout_constraintBottom_toTopOf="@+id/card_1"
+                    app:siBorderColor="@android:color/white"
+                    app:siBorderWidth="3dp" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/theme_blue_light_bg"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/grid"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </ScrollView>
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/theme_blue_light_bg"
+        app:itemIconTint="@drawable/nav_item_color_state"
+        app:itemTextColor="@drawable/nav_item_color_state"
+        app:menu="@menu/dashboard_menu" />
+
+
+</RelativeLayout>
