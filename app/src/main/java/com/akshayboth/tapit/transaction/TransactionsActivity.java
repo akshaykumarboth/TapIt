@@ -51,6 +51,8 @@ public class TransactionsActivity extends AppCompatActivity {
 
         if (contacts.size() > 0) {
             sectionAdapter.addSection(new TransactionSection("9 May. 18", contacts));
+            sectionAdapter.addSection(new TransactionSection("8 May. 18", contacts));
+            sectionAdapter.addSection(new TransactionSection("7 May. 18", contacts));
         }
         //}
 
@@ -100,11 +102,8 @@ public class TransactionsActivity extends AppCompatActivity {
 
         List<TransactionItem> items = new ArrayList<>();
         items.add(new TransactionItem("9 May. 18", "DEBIT", 3000, "Sent To Nina",R.mipmap.ic_swap_vertical_circle_white_36dp));
-        items.add(new TransactionItem("9 May. 18", "DEBIT", 3000, "Sent To Nina",R.mipmap.ic_swap_vertical_circle_white_36dp));
-        items.add(new TransactionItem("9 May. 18", "DEBIT", 3000, "Sent To Nina",R.mipmap.ic_swap_vertical_circle_white_36dp));
-        items.add(new TransactionItem("9 May. 18", "DEBIT", 3000, "Sent To Nina",R.mipmap.ic_swap_vertical_circle_white_36dp));
-        items.add(new TransactionItem("9 May. 18", "DEBIT", 3000, "Sent To Nina",R.mipmap.ic_swap_vertical_circle_white_36dp));
-        items.add(new TransactionItem("9 May. 18", "DEBIT", 3000, "Sent To Nina",R.mipmap.ic_swap_vertical_circle_white_36dp));
+        items.add(new TransactionItem("9 May. 18", "DEBIT", 3000, "Sent To Ravi",R.mipmap.ic_swap_vertical_circle_white_36dp));
+        items.add(new TransactionItem("9 May. 18", "DEBIT", 30000, "Recieved From Satbeer",R.mipmap.ic_swap_vertical_circle_white_36dp));
 
         return items;
     }

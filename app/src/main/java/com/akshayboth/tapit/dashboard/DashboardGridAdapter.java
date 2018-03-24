@@ -1,4 +1,4 @@
-package com.akshayboth.tapit;
+package com.akshayboth.tapit.dashboard;
 
 import android.content.Context;
 import android.content.Intent;
@@ -10,6 +10,10 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.akshayboth.tapit.BankAccountsActivity;
+import com.akshayboth.tapit.EnterPayActivity;
+import com.akshayboth.tapit.R;
+import com.akshayboth.tapit.ScheduleActivity;
 import com.akshayboth.tapit.budget.BudgetActivity;
 import com.akshayboth.tapit.pojo.DashboardItem;
 import com.akshayboth.tapit.transaction.TransactionsActivity;

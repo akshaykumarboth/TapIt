@@ -1,7 +1,6 @@
 package com.akshayboth.tapit.budget;
 
 import android.content.Context;
-import android.content.Intent;
 import android.graphics.PorterDuff;
 import android.graphics.drawable.LayerDrawable;
 import android.support.v4.content.ContextCompat;
@@ -12,10 +11,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.akshayboth.tapit.DashboardGridAdapter;
 import com.akshayboth.tapit.R;
 import com.akshayboth.tapit.pojo.BudgetItem;
 

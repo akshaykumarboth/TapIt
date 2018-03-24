@@ -1,22 +1,15 @@
 package com.akshayboth.tapit.budget;
 
-import android.graphics.PorterDuff;
-import android.graphics.drawable.LayerDrawable;
 import android.support.design.widget.AppBarLayout;
-import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.DefaultItemAnimator;
-import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.widget.RelativeLayout;
 
-import com.akshayboth.tapit.DashboardActivity;
-import com.akshayboth.tapit.DashboardGridAdapter;
 import com.akshayboth.tapit.R;
 import com.akshayboth.tapit.pojo.BudgetItem;
-import com.akshayboth.tapit.pojo.DashboardItem;
 
 import java.util.ArrayList;
 import java.util.List;

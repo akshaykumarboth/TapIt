@@ -10,6 +10,8 @@ import android.support.design.widget.BottomNavigationView;
 import android.util.Log;
 import android.view.MenuItem;
 
+import com.akshayboth.tapit.dashboard.DashboardActivity;
+
 import java.lang.reflect.Field;
 
 /**

@@ -4,6 +4,8 @@
     <string name="result_text_default">Please focus camera on QR Code</string>
     <string name="Rs">\u20B9</string>
 
+    <string name="shared_preference_key">TapItComplexKey</string>
+
     <string name="hint"><font size="14">Enter UPI Id / Mob Number / Contact</font></string>
     <string name="hint1"><font size="25">00.00</font></string>
 

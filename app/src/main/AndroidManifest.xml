@@ -17,7 +17,7 @@
         <activity android:name=".PayAmountActivity" />
         <activity android:name=".SummaryPayActivity" />
         <activity android:name=".ScanActivity" />
-        <activity android:name=".DashboardActivity">
+        <activity android:name=".dashboard.DashboardActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
